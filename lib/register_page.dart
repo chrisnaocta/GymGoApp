@@ -66,6 +66,17 @@ class _RegisterPageState extends State<RegisterPage> {
       return;
     }
 
+    //  Validasi email sederhana
+    if (!email.contains('@')) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Format email tidak valid! Harus mengandung @'),
+          backgroundColor: primaryDark,
+        ),
+      );
+      return;
+    }
+
     if (password != confirmPassword) {
       // setState(() {
       //   _message = "Password dan Konfirmasi Password tidak cocok!";
