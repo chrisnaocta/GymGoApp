@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'keranjang.dart';
 import 'login.dart';
@@ -18,8 +17,7 @@ class _DashboardPageState extends State<DashboardPage> {
   // Dummy data user
   String userName = 'Michael';
   String userEmail = 'michael@email.com';
-  String userProfilePhoto =
-      'https://awsimages.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=700&q=90';
+  String userProfilePhoto = 'assets/images/michael.jpeg';
 
   // Data paket membership
   final List<Map<String, dynamic>> memberships = [
@@ -28,8 +26,7 @@ class _DashboardPageState extends State<DashboardPage> {
       'title': 'Silver',
       'price': 1200000,
       'duration': "9 Bulan",
-      'image':
-          'https://www.epsb.co.uk/wp-content/uploads/silver-membership2.png',
+      'image': 'assets/images/silver.png',
       'shortDesc':
           "Paket dasar untuk akses gym dan penggunaan locker, cocok bagi pemula yang ingin mulai berolahraga.",
       'fullDesc':
@@ -43,7 +40,7 @@ class _DashboardPageState extends State<DashboardPage> {
       'title': 'Gold',
       'price': 1500000,
       'duration': "12 Bulan",
-      'image': 'https://www.epsb.co.uk/wp-content/uploads/gold-membership1.png',
+      'image': 'assets/images/gold.png',
       'shortDesc': 'Akses gym + kelas premium & 5x konsultasi trainer.',
       'fullDesc':
           ''' Gold Membership cocok untuk Anda yang ingin hasil maksimal.
@@ -178,7 +175,7 @@ Platinum Membership adalah paket eksklusif dengan semua fasilitas terbaik:
                 ),
                 accountEmail: Text(userEmail),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(userProfilePhoto),
+                  backgroundImage: AssetImage(userProfilePhoto),
                 ),
               ),
               ListTile(

@@ -1,10 +1,7 @@
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
-import 'keranjang.dart';
 import 'dashboard_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -282,7 +279,7 @@ class _PembayaranPageState extends State<PembayaranPage> {
                       ),
                     ),
                     SizedBox(height: 4),
-                    Text("A.N Click2Cart"),
+                    Text("A.N GymGo"),
                   ] else if (_selectedMethod == "cash")
                     ...[],
                 ],
