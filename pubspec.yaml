@@ -67,6 +67,7 @@ flutter:
     - assets/images/silver.png
     - assets/images/gold.png
     - assets/images/platinum.png
+    - assets/images/QRIS.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

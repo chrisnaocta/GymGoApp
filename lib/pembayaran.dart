@@ -260,8 +260,8 @@ class _PembayaranPageState extends State<PembayaranPage> {
                       style: TextStyle(fontSize: 14),
                     ),
                     SizedBox(height: 8),
-                    Image.network(
-                      "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=contoh-qris",
+                    Image.asset(
+                      "assets/images/QRIS.png",
                       width: 150,
                       height: 150,
                     ),
